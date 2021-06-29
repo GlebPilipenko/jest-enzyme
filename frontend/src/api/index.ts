@@ -1,0 +1,1 @@
+export {getSecretWord} from './getSecretWord';

@@ -1,0 +1,1 @@
+export {findByDataTestAttr} from './findByDataTestAttr';
