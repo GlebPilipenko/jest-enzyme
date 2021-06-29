@@ -1,5 +1,5 @@
 import {getSecretWord} from '../getSecretWord';
-import moxios = require('moxios');
+const moxios = require('moxios');
 
 describe(`getSecretWord`, () => {
   beforeEach(() => moxios.install());
@@ -8,7 +8,7 @@ describe(`getSecretWord`, () => {
   test(`secret word is returned`, async () => {
     // When moxios get request, .wait() get response...
     moxios.wait(() => {
-      // Get las request...
+      // Get last request...
       const request = moxios.requests.mostRecent();
       // Create response with custom response...
       request.respondWith({
